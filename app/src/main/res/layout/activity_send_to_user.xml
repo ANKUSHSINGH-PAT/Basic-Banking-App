@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="SELECT A USER TO TRANSFER MONEY"
+        android:gravity="center_horizontal"
+        android:textColor="#4132f2"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/averia_serif_libre_light"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/send_to_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/activity_user_list_item">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

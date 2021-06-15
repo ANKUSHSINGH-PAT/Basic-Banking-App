@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".UI.HomeScreen">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/banking_welome" />
+
+    <TextView
+        android:id="@+id/bank_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:text="Banking System App"
+        android:textColor="#ea310f"
+        android:textSize="32sp"
+        android:textStyle="italic" />
+    <Button
+            android:id="@+id/all_users"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/custom_button"
+            android:onClick="showAllUsers"
+            android:fontFamily="@font/averia_serif_libre_light"
+            android:text="All Users"
+            android:textSize="16sp"
+            android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/all_transactions"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="All_Transactions"
+        android:background="@drawable/custom_button"
+        android:textStyle="bold"
+        android:onClick="showAllTransactions"
+        android:textSize="16sp"
+        android:fontFamily="@font/averia_serif_libre_light"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
